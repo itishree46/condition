@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>conditional statement</h1>
+        {% if a > b %}
+        <h2>inside outer if block</h2>
+            {% if a > c %}
+            <h2>inside if block inner if</h2>
+            <h3>{{a}} is max</h3>
+            
+            {% else %}
+            <h2>inside if block inner else</h2>
+            <h3>{{c}} is max</h3>
+            {% endif %}
+
+        {% else %}
+        <h2>inside outer else block</h2>
+            {% if b > c %}
+            <h2>inside if block inner if</h2>
+            <h3>{{b}} is max</h3>
+            
+            {% else %}
+            <h2>inside if block inner else</h2>
+            <h3>{{c}} is max</h3>
+            {% endif %}
+        {% endif %}
+
+    </center>
+</body>
+</html>
